@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build": "vite build",
-    "deploy": "npm run build && mkdir -p gh-pages/subfolder-name && mv -v dist/* gh-pages/subfolder-name/ && gh-pages -d gh-pages"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
