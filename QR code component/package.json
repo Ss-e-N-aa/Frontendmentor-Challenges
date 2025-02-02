@@ -3,11 +3,11 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Ss-e-N-aa.github.io/Frontend-mentor-challenges/QR-component",
+  "homepage": "https://Ss-e-N-aa.github.io/Frontendmentor-Challenges/QR-component",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

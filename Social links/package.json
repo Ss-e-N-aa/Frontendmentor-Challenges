@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Ss-e-N-aa.github.io/Frontend-mentor-challenges/social-links",
+  "homepage": "https://Ss-e-N-aa.github.io/Frontendmentor-Challenges/social-links",
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b gh-pages -m 'Deploy social-links to gh-pages'"
   },
   "dependencies": {
     "react": "^18.2.0",

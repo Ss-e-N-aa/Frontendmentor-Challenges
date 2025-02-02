@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Ss-e-N-aa.github.io/Frontend-mentor-challenges/blog-preview-card",
+  "homepage": "https://Ss-e-N-aa.github.io/Frontendmentor-Challenges/blog-preview-card",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
