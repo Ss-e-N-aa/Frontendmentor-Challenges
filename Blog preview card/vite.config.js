@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/Frontend-mentor-challenges/blog-preview-card/',
   plugins: [react()],
-  build: {
-    outDir: "dist",
-  },
 })
