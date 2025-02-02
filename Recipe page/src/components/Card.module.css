@@ -1,0 +1,198 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    border: none;
+    padding: 3rem;
+    margin: 7rem 0 7rem 0;
+    border-radius: 2rem;
+    background-color: #fff;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--stone900);
+}
+
+h1,
+h3 {
+    font-family: 'Young Serif';
+}
+
+img,
+h3,
+h1 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--brown);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.horizontalLine {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.15);
+    margin: 1rem 0 1rem 0;
+}
+
+
+/* Ingredients */
+.ingredientsInfo li {
+    margin-bottom: 1rem;
+}
+
+.ingredientsInfo li:last-child {
+    margin-bottom: 2rem;
+}
+
+.ingredientsInfo li::marker {
+    color: var(--brown);
+}
+
+/* Highlights */
+.highlightCard {
+    width: 100%;
+    background-color: var(--rose50);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.highlightTitle {
+    color: var(--rose800);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.highlightTexts span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.highlightTexts {
+    margin-bottom: 0.5rem;
+}
+
+.highlightTexts p {
+    margin-left: 10px;
+}
+
+
+.highlightInfo li::marker {
+    color: var(--rose800);
+}
+
+/* mix */
+.nutritionValue,
+.instructionsInfo li::marker {
+    color: var(--brown);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.highlightInfo,
+.ingredientsInfo,
+.instructionsInfo {
+    margin-left: 1.5rem;
+}
+
+.highlightTexts,
+.ingredientsTexts,
+.instructionsTexts {
+    display: flex;
+    margin-left: 1rem;
+}
+
+/* Instructions */
+.instructionsSection h3 {
+    margin-top: 1rem;
+}
+
+.instructionsInfo {
+    margin-bottom: 2rem;
+}
+
+.instructionsTexts {
+    display: block;
+    /*     flex-direction: column;
+    flex-wrap: wrap; */
+    margin-bottom: 1rem;
+}
+
+.instructionsTexts h5 {
+    font-size: 16px;
+}
+
+.instructionsTexts p {
+    white-space: normal;
+
+}
+
+/* Nutrition */
+.tableSection h3 {
+    margin-top: 1rem;
+}
+
+.nutritionInfo {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.nutritionTexts {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+}
+
+.nutritionInfo li {
+    border-bottom: 1px solid var(--stone150);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nutritionInfo li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.nutritionKey {
+    font-weight: 500;
+}
+
+@media (max-width: 375px) {
+    .cardContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+
+        img {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    .textContainer {
+        padding: 0 1.4rem 0 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+}

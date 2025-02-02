@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap');
+
+
+:root {
+  font-family: "Outfit", sans-serif;
+
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+
+  --brown: hsl(14, 45%, 36%);
+
+  --rose50: hsl(330, 100%, 98%);
+  --rose800: hsl(332, 51%, 32%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--stone100);
+  color: var(--stone600);
+}
