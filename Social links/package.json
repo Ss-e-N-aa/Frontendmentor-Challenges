@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build": "vite build",
-    "deploy": "gh-pages -d dist -b gh-pages -m 'Deploy social-links to gh-pages'"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
