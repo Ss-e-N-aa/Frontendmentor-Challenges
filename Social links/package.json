@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ss-e-n-aa.github.io/Frontendmentor-Challenges/",
+  "homepage": "https://ss-e-n-aa.github.io/Frontendmentor-Challenges/social-links",
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
