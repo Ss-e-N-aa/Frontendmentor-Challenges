@@ -14,11 +14,12 @@
 ## Overview
 
 ### Screenshot
+![Screenshot 2025-02-04 at 18-16-34 Blog Card Preview](https://github.com/user-attachments/assets/fcfed497-4eb1-4633-b450-91e17f28d272)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/blog-preview-card-using-react-10XM4UXcOc
+- Live Site URL: https://ss-e-n-aa.github.io/Frontendmentor-Challenges/blog-preview-card/
 
 ## My process
 
