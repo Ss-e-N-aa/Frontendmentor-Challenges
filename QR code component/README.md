@@ -17,12 +17,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Overview
 
 ### Screenshot
-![Screenshot 2024-12-26 at 19-02-41 Vite React](https://github.com/user-attachments/assets/109e1a57-ba2f-4b1f-a210-5aeeaf4014fa)
+![Screenshot 2025-02-04 at 18-16-42 QR code](https://github.com/user-attachments/assets/8b8be3de-3de0-453e-949c-18e8f2bf5c82)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: (https://Ss-e-N-aa.github.io/mentor-QR-code-challenge)
+- Solution URL: https://www.frontendmentor.io/solutions/qr-code-component-using-react-Rop729iwew
+- Live Site URL: https://ss-e-n-aa.github.io/Frontendmentor-Challenges/QR-component/
 
 ## My process
 
