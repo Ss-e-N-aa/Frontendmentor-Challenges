@@ -14,11 +14,12 @@
 ## Overview
 
 ### Screenshot
+![Screenshot 2025-02-04 at 18-17-00 Recipe Page](https://github.com/user-attachments/assets/13984dea-653d-4b0b-b704-339055c08996)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/recipe-page-using-react-6as5l825vw
+- Live Site URL:  https://ss-e-n-aa.github.io/Frontendmentor-Challenges/recipe-page/
 
 ## My process
 
