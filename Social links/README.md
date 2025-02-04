@@ -14,11 +14,12 @@
 ## Overview
 
 ### Screenshot
+![Screenshot 2025-02-04 at 18-17-10 Social Links Preview Card](https://github.com/user-attachments/assets/a2a059ac-13a3-4157-9d91-d9e934d347eb)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/social-links-profile-using-react-vSnOx5iTnA
+- Live Site URL: https://ss-e-n-aa.github.io/Frontendmentor-Challenges/social-links/
 
 ## My process
 
