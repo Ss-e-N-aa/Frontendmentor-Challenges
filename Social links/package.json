@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -e deploy-social-links"
+    "deploy": "gh-pages -d dist --dest Frontendmentor-Challenges/social-links"
   },
   "dependencies": {
     "react": "^18.2.0",
