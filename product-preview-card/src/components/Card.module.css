@@ -7,61 +7,54 @@
 
 .cardContainer {
     display: flex;
-
     background: white;
-    width: 40rem;
-    height: 30rem;
+    width: 610px;
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.cardContainer img {
-    max-inline-size: 100%;
-    max-width: 100%;
-    max-height: 100%;
+.productImg {
+    width: 50%;
 }
 
 .textSection {
+    width: 50%;
     padding: 2rem;
+}
 
-    h1 {
-        color: var(--veryDarkBlue);
-        padding-top: 1rem;
+.textSection h1 {
+    color: var(--veryDarkBlue);
+    padding-top: 0.7rem;
+    font-family: "Fraunces";
+    font-weight: 700;
+}
 
-        font-family: "Fraunces";
-        font-weight: 700;
-    }
+.textSection h1,
+p {
+    margin-bottom: 1.5rem;
+}
 
-    h1,
-    p {
-        margin-bottom: 1.5rem;
-    }
+.textSection .tag,
+p {
+    color: var(--darkGrayishBlue);
+}
 
-    .tag,
-    p {
-        color: var(--darkGrayishBlue);
-    }
-
-    p {
-        font-family: "Montserrat";
-        font-size: 0.9rem;
-    }
-
+.textSection p {
+    font-family: "Montserrat";
+    font-size: 0.9rem;
 }
 
 .tag {
     font-family: "Montserrat";
     font-size: 0.7rem;
     font-weight: 500;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5em;
     text-transform: uppercase;
 }
 
 .priceContainer {
     display: flex;
-    flex-direction: row;
     align-items: center;
-
     margin-bottom: 1.5rem;
 }
 
@@ -94,4 +87,21 @@
 .cartBtn:hover {
     cursor: pointer;
     background-color: var(--veryDarkCyan);
+}
+
+/* for smaller screens */
+@media (max-width: 768px) {
+    .cardContainer {
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .productImg {
+        content: url(../assets/image-product-mobile.jpg);
+        width: 100%;
+    }
+
+    .textSection {
+        width: 100%;
+    }
 }

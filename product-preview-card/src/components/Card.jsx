@@ -1,27 +1,16 @@
 import styles from './Card.module.css'
 import desktopImg from '../assets/image-product-desktop.jpg'
-import mobileImg from '../assets/image-product-mobile.jpg'
 import iconImg from '../assets/icon-cart.svg'
 
 export default function Card() {
     return (
         <div className={styles.container}>
             <div className={styles.cardContainer}>
-                <picture>
-                    <source
-                        srcSet={mobileImg}
-                        media='(max-width: 686px)'
-                        width='686'
-                        height='480'
-                    />
-
-                    <img
-                        src={desktopImg}
-                        alt="product image"
-                        width='600'
-                        height='900'
-                    />
-                </picture>
+                <img
+                    src={desktopImg}
+                    className={styles.productImg}
+                    alt="product image"
+                />
 
                 <div className={styles.textSection}>
                     <span className={styles.tag}>perfume</span>
