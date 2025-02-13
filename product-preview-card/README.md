@@ -17,6 +17,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 
 ### Screenshot
+desktop 
+![Screenshot 2025-02-13 at 17-22-10 Product Preview Card](https://github.com/user-attachments/assets/eda023e3-03a5-4a5a-8633-6f73058ec447)
+
+mobile
+![Screenshot 2025-02-13 at 17-22-29 Product Preview Card](https://github.com/user-attachments/assets/13f6598b-1335-4ffd-9818-e61ec71bf0de)
+
 
 ### Links
 
