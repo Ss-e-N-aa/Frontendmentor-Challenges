@@ -16,11 +16,13 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 ## Overview
 
 ### Screenshot
+![Screenshot desktop view](https://github.com/user-attachments/assets/85373b4e-6e9d-4126-816e-167a792cd949)
+![Screenshot mobile view](https://github.com/user-attachments/assets/bc91ad93-c91c-49af-992f-c8e593c5ad74)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/article-preview-component-using-react-VtLmI3Roc_
+- Live Site URL: https://ss-e-n-aa.github.io/Frontendmentor-Challenges/article-preview-component/
 
 ## My process
 
