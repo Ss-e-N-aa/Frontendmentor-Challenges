@@ -1,0 +1,56 @@
+.shareCardSelected {
+    width: 70%;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--veryDarkBlue);
+    position: absolute;
+    top: -4rem;
+    left: 13.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.shareCardUnselected {
+    display: none;
+}
+
+.shareSpan {
+    font-size: 0.85rem;
+    color: var(--greyBlue);
+    letter-spacing: 0.25rem;
+}
+
+@media (max-width: 375px) {
+    .shareCardSelected {
+        width: 100%;
+        height: 100%;
+        justify-content: left;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        box-shadow: none;
+    }
+
+    .shareCardSelected :nth-child(1) {
+        margin-left: 2rem;
+    }
+
+    .shareCardSelected :nth-child(2),
+    .shareCardSelected :nth-child(3),
+    .shareCardSelected :nth-child(4) {
+        margin-left: 1rem;
+    }
+
+    .shareSpan {
+        font-size: .8rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .shareCardSelected img {
+        width: 6%;
+    }
+}
