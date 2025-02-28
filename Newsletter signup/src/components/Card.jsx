@@ -11,15 +11,23 @@ const infoList = [
 ]
 
 export default function Card({ onSuccess }) {
-
     const [formValues, setFormValues] = useState({});
+    const [error, setError] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
 
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData);
+        const email = data.email.trim();
 
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            setError(true);
+            return
+        }
+
+        setError(false);
         setFormValues(data);
         console.log(data);
         onSuccess();
@@ -55,9 +63,12 @@ export default function Card({ onSuccess }) {
                         ))}
                     </ul>
 
-                    <form className="inputSection" onSubmit={handleSubmit}>
-                        <label htmlFor="">Email address</label>
-                        <input type="email" name='email' id='email' placeholder='email@company.com' required />
+                    <form className="inputSection" onSubmit={handleSubmit} noValidate>
+                        <div className="labelContainer">
+                            <label htmlFor=""><h5>Email address</h5></label>
+                            {error && <label className='ErrorLabel'><h5>Valid email is required</h5></label>}
+                        </div>
+                        <input type="email" name='email' id='email' placeholder='email@company.com' className={error ? 'EmailError' : ""} />
                         <button>
                             Subscribe to monthly newsletter
                         </button>
