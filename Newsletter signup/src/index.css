@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+
+  --Red: hsl(4, 100%, 67%);
+  --Red2: hsl(351, 100%, 67%);
+
+  --Blue700: hsl(235, 18%, 26%);
+  --Blue800: hsl(234, 29%, 20%);
+  --Grey: hsl(0, 0%, 58%);
+
+}
+
+body {
+  background-color: var(--Blue700);
+  color: var(--Blue800);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Card css styles */
+
+.card {
+  display: flex;
+  width: 50rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 4px 40px var(--Blue800);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 2rem;
+}
+
+.overview {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.sideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+picture {
+  width: 40%;
+  height: 100%;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.infoSection h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.listSection {
+  padding: 2rem 0 2rem 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.listSection li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+
+}
+
+.inputSection label {
+  font-weight: 700;
+}
+
+.inputSection input {
+  padding: 1rem;
+  margin-top: .5rem;
+  color: var(--Grey);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0.5rem;
+
+  &:focus {
+    outline: none;
+    border: 1px solid black;
+    color: black;
+  }
+}
+
+.inputSection button {
+  margin-top: 1rem;
+}
+
+/* --------------------------------------------------------------- */
+
+/* same styles */
+
+.successCardContent button,
+.inputSection button {
+  color: white;
+  background-color: var(--Blue800);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(135deg, var(--Red2), var(--Red));
+    box-shadow: 1px 15px 34px -2px hsl(351, 100%, 67%, 0.3), 1px 15px 34px -2px hsl(4, 100%, 67%, 0.3);
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+/* Success Card css styles */
+
+.successCard {
+  display: flex;
+  width: 30.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 4px 40px var(--Blue800);
+}
+
+.successCardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.successCardContent img {
+  width: 15%;
+}
+
+.successCardContent h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: -1rem;
+}
+
+.successCardContent p {
+  margin-bottom: 0.5rem;
+}
+
+.successCardContent span {
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------- */
+
+/*  media queries for mobile view */
+
+@media (max-width: 375px) {
+  .card {
+    border-radius: 0;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .overview {
+    width: 100%;
+  }
+
+  picture {
+    width: 100%;
+  }
+
+  .infoSection {
+    margin-top: 0;
+  }
+
+  .infoSection h1 {
+    font-size: 2.5rem;
+  }
+
+  .listSection {
+    gap: 1rem;
+  }
+
+  .listSection li {
+    align-items: start;
+  }
+
+  /* ------------------------------------- */
+  /* success card style */
+
+  .successCard {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .successCardContent {
+    justify-content: start;
+    padding: 2rem;
+  }
+
+  .successCardContent img {
+    margin-top: 4rem;
+  }
+
+  .successCardContent :nth-child(4) {
+    margin-top: 5rem;
+  }
+
+  .successCardContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .successCardContent p {
+    line-height: 1.5;
+  }
+
+}
