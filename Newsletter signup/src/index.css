@@ -154,11 +154,15 @@ picture {
   box-shadow: 0 4px 40px var(--Blue800);
 }
 
-.successCardContent {
+.successCardContent,
+.successCardInfo {
   display: flex;
   flex-direction: column;
-  padding: 4rem;
   gap: 2rem;
+}
+
+.successCardContent {
+  padding: 4rem;
 }
 
 .successCardContent img {
@@ -177,6 +181,10 @@ picture {
 
 .successCardContent span {
   font-weight: 700;
+}
+
+.successCardBtn button {
+  width: 100%;
 }
 
 
@@ -227,7 +235,7 @@ picture {
   }
 
   .successCardContent {
-    justify-content: start;
+    justify-content: space-around;
     padding: 2rem;
   }
 
