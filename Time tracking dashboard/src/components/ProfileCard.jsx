@@ -1,10 +1,8 @@
+import { useState } from 'react';
 import profileImg from '../assets/image-jeremy.png'
 
-export default function ProfileCard() {
-
-    function handleClick(e) {
-        e.preventDefault();
-    }
+export default function ProfileCard({ timeframes, selectTimeframe }) {
+    const [value, setValue] = useState(1)
 
     return (
         <div className="profileContainer">
@@ -18,9 +16,16 @@ export default function ProfileCard() {
                 </div>
             </div>
             <div className="linksContainer">
-                <a onClick={handleClick}>Daily</a>
-                <a onClick={handleClick}>Weekly</a>
-                <a onClick={handleClick}>Monthly</a>
+                {timeframes.map((timeframe, index) => (
+                    <a onClick={(e) => {
+                        e.preventDefault();
+                        selectTimeframe(timeframe);
+                        setValue(index);
+                    }
+                    } key={index} className={index === value ? "active" : ""} >
+                        {timeframe}
+                    </a>
+                ))}
             </div>
         </div>
     );

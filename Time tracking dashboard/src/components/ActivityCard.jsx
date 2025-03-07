@@ -15,21 +15,43 @@ const imageList = {
     "Work": workImg
 }
 
-export default function ActivityCard({ data, className }) {
+export default function ActivityCard({ title, timeframe, timeframes, className }) {
+
+    const getPreviousTimeFrame = (timeframe) => {
+        switch (timeframe) {
+            case 'daily':
+                return "Yesterday";
+            case 'weekly':
+                return 'Last Week';
+            case 'monthly':
+                return 'Last Month';
+            default:
+                return "Last Week";
+        }
+    }
+
+    //  ex , timeframes.daily.current;
+    const currentStats = timeframes[timeframe].current;
+    const previousStats = timeframes[timeframe].previous;
+
     return (
         <div className={`${className} cardContainer`}>
-            {imageList[data.title] && (
-                <img className='backgroundIcon' src={imageList[data.title]} alt="image" />
-            )} *
+            {imageList[title] && (
+                <img className='backgroundIcon' src={imageList[title]} alt={`${imageList[title]} icon`} />
+            )}
             <div className="overview">
                 <div className="cardContent">
                     <header>
-                        <h2>{data.title}</h2>
-                        <img src={ellipsisImg} alt="image of an ellipissi icon" />
+                        <h2>{title}</h2>
+                        <img className='ellipsisIcon' src={ellipsisImg} alt="image of an ellipissi icon" />
                     </header>
                     <div className="timeSection">
-                        <h1>{data.timeframes.daily.current}hrs</h1>
-                        <span>Last day - {data.timeframes.daily.previous}hrs</span>
+                        <h1>
+                            {currentStats}{currentStats === 1 ? "hr" : "hrs"}
+                        </h1>
+                        <span>
+                            {getPreviousTimeFrame(timeframe)} - {previousStats}{previousStats === 1 ? 'hr' : 'hrs'}
+                        </span>
                     </div>
                 </div>
             </div>

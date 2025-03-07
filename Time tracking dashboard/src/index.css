@@ -70,7 +70,7 @@ main {
 
 .profileContainer {
   width: 15rem;
-  height: 29.4rem;
+  height: 29.3rem;
   background-color: var(--Dark-blue);
   border-radius: 1rem;
   color: white;
@@ -128,6 +128,10 @@ main {
   }
 }
 
+.linksContainer .active {
+  color: white;
+}
+
 /* ---------------------------------------------- */
 
 .activityCards {
@@ -156,8 +160,21 @@ main {
 .overview {
   background-color: var(--Dark-blue);
   border-radius: 1rem;
-  margin-bottom: -25px;
+  margin-bottom: -5px;
   z-index: 1;
+}
+
+.overview:hover {
+  background-color: hsl(236, 43%, 33%);
+}
+
+.ellipsisIcon {
+  opacity: 0.6;
+}
+
+.ellipsisIcon:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .cardContainer h2 {
@@ -166,10 +183,6 @@ main {
   color: white;
 }
 
-/* .cardContainer img {
-  width: 30%;
-}
- */
 .cardContent {
   display: flex;
   flex-direction: column;

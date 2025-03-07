@@ -1,23 +1,22 @@
 import ProfileCard from "./ProfileCard"
 import ActivityCard from "./ActivityCard"
-import { useEffect, useState } from "react"
+import { useState } from "react";
 
-export default function Dashboard() {
-    const [data, setData] = useState([]);
+const timeframes = ['Daily', 'Weekly', 'Monthly'];
 
-    useEffect(() => {
-        fetch('/Frontendmentor-Challenges/time-tracking-dashboard/data.json')
-            .then((response) => response.json())
-            .then((fetchedData) => setData(fetchedData))
-            .catch((error) => console.error(error))
-    }, [])
+export default function Dashboard({ activities }) {
+    const [timeframe, setTimeframe] = useState('weekly')
+
+    const selectTimeframe = (clickedTimeframe) => {
+        setTimeframe(clickedTimeframe.toLowerCase());
+    }
 
     return (
         <div className="dashboard" >
-            <ProfileCard />
+            <ProfileCard timeframes={timeframes} selectTimeframe={selectTimeframe} />
             <div className="activityCards">
-                {data.map((i, index) => (
-                    <ActivityCard key={index} data={i} className={`div${index + 1}`} />
+                {activities.map((i, index) => (
+                    <ActivityCard key={index} {...i} timeframe={timeframe} className={`div${index + 1}`} />
                 ))}
             </div>
         </div>
